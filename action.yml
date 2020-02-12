@@ -2,11 +2,11 @@ name: 'github-comment'
 description: 'Send text to GitHub pull request as the comment'
 inputs:
   repository:
-    description: 'GitHub repository. Its style should be owner/repo'
+    description: 'GitHub repository. Its style should be like "owner/repo"'
     required: false
     default: ${{ github.repository }}
   number:
-    description: 'A pull request number you want to send a comment'
+    description: 'An issue/pull request number you want to send a comment. Default is pull request number'
     required: false
     default: ${{ github.event.pull_request.number }}
   body:
