@@ -1,0 +1,18 @@
+name: 'github-comment'
+description: 'Send text to GitHub pull request as the comment'
+inputs:
+  repository:
+    description: 'GitHub repository. Its style should be owner/repo'
+    required: false
+    default: ${{ github.repository }}
+  number:
+    description: 'A pull request number you want to send a comment'
+    required: false
+    default: ${{ github.event.pull_request.number }}
+  body:
+    description: 'Text to be sent to GitHub'
+    required: true
+    default: ''
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
