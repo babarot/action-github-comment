@@ -24,7 +24,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Post comments to GitHub
-      uses: b4b4r07/action-github-comment@master
+      uses: b4b4r07/action-github-comment@v1
       with:
         body: |
           text...
