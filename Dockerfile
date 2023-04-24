@@ -1,4 +1,4 @@
-FROM golang:1.13.7-stretch
+FROM golang:1.20.3-bullseye
 
 ENV GITHUB_COMMENT_VERSION=v0.1.1
 
